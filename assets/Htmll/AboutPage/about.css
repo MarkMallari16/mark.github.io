@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --primary: #fdaaba;
+  --accent: #eee8a9;
+  --background: #fdfdfd;
+  --background2: #d4f4ff;
+  --accent2: #00deff;
+  --black: #171717;
+  --secondary: #80afdb;
+  --background: #d4f4ff;
+}
+/*Navigation*/
+.logo {
+  width: 100%;
+  max-width: 250px;
+}
+.navBar {
+  padding: 32px 0;
+}
+.nav-link {
+  margin-left: 41px;
+}
+.nav-link:hover {
+  color: var(--primary);
+}
+/*Contact*/
+.text {
+  font-weight: 600;
+}
+.owner1 {
+  width: 100%;
+  max-width: 300px;
+}
+.owner2 {
+  width: 100%;
+  max-width: 500px;
+}
+.card {
+  background-color: var(--background);
+}
+.owner-img {
+  border: 1px solid #171717;
+  border-radius: 12px;
+}
+/*Footer*/
+.button-up {
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+.button-up.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(-20px);
+}
+.platform a {
+  transition: all 0.3s ease;
+  padding: 6px 10px;
+  background-color: var(--accent);
+  color: var(--black);
+  border-radius: 10px;
+}
+.platform a i {
+  font-size: 1.2rem;
+}
+.platform a:hover {
+  transform: translateY(-10px);
+}
+footer {
+  font-weight: 300;
+}
