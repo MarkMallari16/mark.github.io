@@ -17,6 +17,9 @@
   width: 100%;
   max-width: 250px;
 }
+.text{
+  margin-top: 32px !important;
+}
 .navBar {
   padding: 32px 0;
 }
@@ -26,27 +29,110 @@
 .nav-link:hover {
   color: var(--primary);
 }
-/*Contact*/
-.text {
-  font-weight: 600;
+/*about*/
+.story{
+  padding: 50px;
+  background-color: var(--accent);
 }
-.owner1 {
-  width: 100%;
-  max-width: 300px;
+.our-story-text {
+  position: relative;
+
 }
-.owner2 {
-  width: 100%;
-  max-width: 500px;
+.our-story-text::before{
+  margin-left: -25px;
+  content: "";
+  display: block;
+  width: 30%;
+  background-color: var(--primary);
+  height: 2px;
+  position: absolute;
+  left: 0;
+  top: 50%;
 }
-.card {
+.our-story-text::after{
+  margin-right: -25px;
+  content: "";
+  display: block;
+  width: 30%;
+  background-color: var(--primary);
+  height: 2px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+
+/*customer*/
+img{
+  height: 100%;
+  object-fit: cover;
+}
+.customer img{
+  transition: all 0.3s ease;
+}
+.customer img:hover{
+ transform: scale(1.10);
+}
+
+.service {
+  margin-top: 100px !important;
   background-color: var(--background);
 }
-.owner-img {
-  border: 1px solid #171717;
-  border-radius: 12px;
+.equal-height {
+  display: flex;
+  align-items: stretch;
+}
+.card{
+  background-color: var(--background2);
+  padding: 20px;
+}
+.stars i{
+  color: #FF9529;
+}
+/*owner*/
+.owner{
+  background-color: var(--primary);
+}
+.pop-btn{
+  color: var(--black);
+  background-color: var(--primary);
+  border: none;
+}
+.pop-btn:hover{
+  color: var(--black);
+  background-color: #d895a3 ;
 }
 /*Footer*/
+.underline {
+  color: var(--black);
+  display: inline-block;
+  padding-bottom: 6px;
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.underline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fdaaba;
+  transition: width 0.4s ease;
+}
+
+.underline:hover::before {
+  width: 100%;
+  right: auto;
+}
+
+.underline:hover{
+  color: #d895a3 !important;
+}
+/*Arrow up*/
 .button-up {
+  color: var(--primary);
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s;
@@ -69,6 +155,19 @@
 .platform a:hover {
   transform: translateY(-10px);
 }
+/*Footer*/
 footer {
   font-weight: 300;
 }
+/*Footer*/
+footer{
+  background-color: var(--background2);
+}
+footer {
+  margin-top: 120px !important;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
